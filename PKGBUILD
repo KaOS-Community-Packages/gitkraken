@@ -1,12 +1,12 @@
 pkgname=gitkraken
-pkgver=1.0.0
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
 url="https://www.gitkraken.com/"
-license=('GitHub')
+license=('custom')
 depends=('systemd' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib')
-sha256sums=('6926c3b6a7963c38b93c9c9f16ca741c8b843f9a93c6e2323413a2c217088ef3')
+sha256sums=('4d5205d64302e23d2d8f89cbd9ff40027d4c4a1e549f446b93d86aef667a89d6')
 source=("https://release.gitkraken.com/linux/gitkraken-amd64.deb")
 install=gitkraken.install
 package() {
