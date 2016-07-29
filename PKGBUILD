@@ -6,7 +6,7 @@ arch=('x86_64')
 url="https://www.gitkraken.com/"
 license=('custom')
 depends=('systemd' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
-md5sums=('36bb1e19812446980fbb2f13ef3b8c94')
+md5sums=('a213b897a99685a6a809d4467b184079')
 source=("https://release.gitkraken.com/linux/gitkraken-amd64.deb")
 package() {
   tar -xzf ${srcdir}/data.tar.gz -C "${pkgdir}"
