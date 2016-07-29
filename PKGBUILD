@@ -1,5 +1,5 @@
 pkgname=gitkraken
-pkgver=1.5.0
+pkgver=1.5.1
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
