@@ -1,5 +1,5 @@
 pkgname=gitkraken
-pkgver=1.8.0
+pkgver=1.9.0
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
@@ -7,7 +7,7 @@ url="https://www.gitkraken.com/"
 license=('custom')
 depends=('systemd' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
 source=("https://release.gitkraken.com/linux/gitkraken-amd64.deb")
-md5sums=('bad07e93be537ed88500b49d21216594')
+md5sums=('b3dc5ff7dd02877fef4561ffe931dec4')
 package() {
   tar -xzf ${srcdir}/data.tar.gz -C "${pkgdir}"
   chmod -R 755 "$pkgdir/usr"
