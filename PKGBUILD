@@ -1,18 +1,26 @@
 pkgname=gitkraken
-pkgver=1.9.3
+pkgver=2.0.1
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
 url="https://www.gitkraken.com/"
 license=('custom')
-depends=('systemd' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
-source=("https://release.gitkraken.com/linux/gitkraken-amd64.deb")
-md5sums=('ded8477782737a08edd9f2cb1b28f387')
+depends=('gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
+source=("https://release.gitkraken.com/linux/v${pkgver}.tar.gz"
+        "${pkgname}.desktop"
+        "${pkgname}.svg")
+md5sums=('8e99c4dfd5b424beb250707476528933'
+         'e70ed2fa89e0929c02262f9300f0f1b2'
+         '952efc24804093bec7a95efe02d18c48')
+
 package() {
-  tar -xzf ${srcdir}/data.tar.gz -C "${pkgdir}"
-  chmod -R 755 "$pkgdir/usr"
-  sed -i  's/app/gitkraken/' "$pkgdir/usr/share/applications/$pkgname.desktop"
-  rm -r $pkgdir/usr/share/{lintian,doc}
-  cd $pkgdir/usr/share/pixmaps
-  mv app.png  gitkraken.png
+    install -dm755 ${pkgdir}/opt/${pkgname} \
+            ${pkgdir}/usr/share/{applications,icons/hicolor/scalable} \
+            ${pkgdir}/usr/bin
+    cp -R ${srcdir}/${pkgname}/* ${pkgdir}/opt/${pkgname}
+    ln -s /opt/${pkgname}/${pkgname} ${pkgdir}/usr/bin/${pkgname}
+    install -Dm644 ${srcdir}/${pkgname}.desktop \
+            ${pkgdir}/usr/share/applications/${pkgname}.desktop
+    install -Dm644 ${srcdir}/${pkgname}.svg \
+            ${pkgdir}/usr/share/icons/hicolor/scalable/apps/${pkgname}.svg
 }

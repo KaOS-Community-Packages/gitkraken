@@ -1,7 +1,10 @@
 # gitkraken
+
 Git client with efficiency, elegance and reliability at the core
 
-https://www.gitkraken.com/
+[Homepage](https://www.gitkraken.com/)
 
-
+### Install:
+```
 kcp -i gitkraken
+```
