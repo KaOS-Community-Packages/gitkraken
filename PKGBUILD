@@ -1,10 +1,10 @@
 pkgname=gitkraken
-pkgver=2.4.0
+pkgver=2.5.0
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
 url="https://www.gitkraken.com/"
-license=('custom')
+license=('custom: https://www.gitkraken.com/eula')
 depends=('curl-kcp' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
 source=("https://release.gitkraken.com/linux/v${pkgver}.tar.gz"
         "${pkgname}.desktop"
