@@ -1,5 +1,5 @@
 pkgname=gitkraken
-pkgver=3.1.2
+pkgver=3.2.1
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
@@ -10,7 +10,7 @@ source=("https://release.gitkraken.com/linux/v${pkgver}.tar.gz"
         "${pkgname}.desktop"
         "${pkgname}.svg"
         "${pkgname}.sh")
-md5sums=('b3fd4e4a4278db2d2f4eac5b86be6758'
+md5sums=('0a07683baac2190fec3902f2bfb79d8e'
          'e70ed2fa89e0929c02262f9300f0f1b2'
          '952efc24804093bec7a95efe02d18c48'
          '10af5f5f6e5253f3b742982ebde6c1ae')
