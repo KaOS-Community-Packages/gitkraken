@@ -1,12 +1,3 @@
-# Contributor: Francisco Josué Morazán Arriola, https://github.com/fjmorazan
-# Contributor: Widi Rajaka Untung, https://github.com/wrajaka
-# Contributor: Colin Duquesnoy, https://github.com/ColinDuquesnoy
-# Contributor: DemianRV, https://github.com/DemianRV
-# Contributor: forostm, https://github.com/forostm
-# Contributor: dagodax, https://github.com/dagodax
-# Contributor: Mermouy, https://github.com/Mermouy
-# Contributor: Gunther Strube, https://github.com/bits4fun
-
 pkgname=gitkraken
 pkgver=4.0.5
 pkgrel=1
