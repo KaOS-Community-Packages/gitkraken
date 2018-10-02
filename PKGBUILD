@@ -1,12 +1,12 @@
 pkgname=gitkraken
 pkgver=4.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
 url="https://www.gitkraken.com/"
 license=('custom: https://www.gitkraken.com/eula')
 depends=('curl-kcp' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
-source=("https://release.axocdn.com/linux/gitkraken-amd64.tar.gz"
+source=("https://release.gitkraken.com/linux/GitKraken-v$pkgver.tar.gz"
         "${pkgname}.desktop"
         "${pkgname}.svg"
         "${pkgname}.sh")
