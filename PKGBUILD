@@ -1,16 +1,17 @@
 pkgname=gitkraken
-pkgver=5.0.1
+pkgver=5.0.2
 pkgrel=1
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
 url="https://www.gitkraken.com/"
 license=('custom: https://www.gitkraken.com/eula')
 depends=('curl-kcp' 'gconf' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libgnome-keyring')
+optdepends=('openssh' 'gnupg')
 source=("https://release.gitkraken.com/linux/GitKraken-v$pkgver.tar.gz"
         "${pkgname}.desktop"
         "${pkgname}.svg"
         "${pkgname}.sh")
-md5sums=('17997dff5d6e9f1c57564a829b24bf3b'
+md5sums=('155d5c380999c258f4021d6c8875dd10'
          'e70ed2fa89e0929c02262f9300f0f1b2'
          '952efc24804093bec7a95efe02d18c48'
          '10af5f5f6e5253f3b742982ebde6c1ae')
