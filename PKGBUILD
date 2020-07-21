@@ -1,11 +1,11 @@
 pkgname=gitkraken
 pkgver=7.1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Git client with efficiency, elegance and reliability at the core"
 arch=('x86_64')
 url="https://www.gitkraken.com/"
 license=('custom: https://www.gitkraken.com/eula')
-depends=('curl' 'gtk2' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libsecret')
+depends=('curl' 'gtk3' 'nss' 'libxtst' 'libnotify' 'alsa-lib' 'libsecret')
 optdepends=('openssh' 'gnupg')
 source=("https://release.gitkraken.com/linux/GitKraken-v$pkgver.tar.gz"
         "${pkgname}.desktop"
